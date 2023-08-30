@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #228B22;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+header {
+  background-color: #D3D3D3;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+
+body {
+  background-image: url('https://identity.iti.gov.eg/images/ITI-building.svg');
+  background-repeat: no-repeat;
+
+  background-size: 70% 70%;
+   font-family: Arial, Helvetica, sans-serif;
+  background-position: right bottom;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<header>
+  <h2>IOT_AZWAN <img src="iti.png"  width="23" height="25" ></h2>
+</header>
+<a href = "script.php?status=on">Press here to turn ON the LED</a>
+<p><br></p>
+<a href = "script.php?status=off">Press here to turn OFF the LED</a>
+<h4>Now The LED is OFF</h4>
+
+</body>
+</html>
